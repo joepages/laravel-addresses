@@ -65,7 +65,7 @@ trait ManagesAddresses
     /**
      * Store a new address for a parent model.
      */
-    public function storeAddress(AddressRequest $request, int $parentId): JsonResource
+    public function storeAddress(AddressRequest $request, int $parentId): JsonResponse
     {
         $parent = $this->resolveParentModel($parentId);
 
@@ -77,8 +77,7 @@ trait ManagesAddresses
 
         return (new AddressResource($address))
             ->response()
-            ->setStatusCode(201)
-            ->original;
+            ->setStatusCode(201);
     }
 
     /**
