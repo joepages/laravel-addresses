@@ -1,20 +1,31 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "your-vendor/addresses",
+    "name": "joepages/laravel-addresses",
     "description": "Polymorphic addresses package for Laravel - Attach N addresses to any model",
     "keywords": ["laravel", "addresses", "polymorphic", "multi-tenancy"],
     "license": "MIT",
     "type": "library",
+    "homepage": "https://github.com/joepages/laravel-addresses",
+    "authors": [
+        {
+            "name": "Jose Pages",
+            "homepage": "https://github.com/joepages"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/joepages/laravel-addresses/issues",
+        "source": "https://github.com/joepages/laravel-addresses"
+    },
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^11.0|^12.0",
-        "illuminate/support": "^11.0|^12.0",
-        "illuminate/database": "^11.0|^12.0"
+        "illuminate/database": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0"
     },
     "require-dev": {
+        "mockery/mockery": "^1.6",
         "orchestra/testbench": "^9.0|^10.0",
-        "phpunit/phpunit": "^11.0|^12.0",
-        "mockery/mockery": "^1.6"
+        "phpunit/phpunit": "^11.0|^12.0"
     },
     "autoload": {
         "psr-4": {
